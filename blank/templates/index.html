@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>AppEngine Django Blank</title>
+</head>
+<style>
+.msg_main{
+    border:1px solid #aaa;
+    padding:10px;
+    margin:10px
+}
+.msg_title{
+    font-size:16px;
+}
+.msg_user {
+    font-size:12px;
+}
+</style>
+<body>
+    {% for message in messages %}
+        <div class="msg_main">
+            <span class="msg_title">{{ message.title }}</span>
+
+            <div class="msg_body">{{ message.body }}</div>
+            <span class="msg_user">written by {{ message.user }}</span>
+            <span class="msg_date">{{message.date}}</span>
+        </div>
+    {% endfor %}
+    <a href="/write/">Write</a>
+</body>
+</html>

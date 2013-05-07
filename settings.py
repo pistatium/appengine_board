@@ -1,12 +1,17 @@
+DEBUG = True
+TEMPLATE_DEBUG = DEBUG
+
+
 MIDDLEWARE_CLASSES = (
+    'google.appengine.ext.ndb.django_middleware.NdbDjangoMiddleware',
     'django.middleware.common.CommonMiddleware',
 )
 
 INSTALLED_APPS = (
-    'appengine_django_blank'
+    'blank',
 )
 
-ROOT_URLCONF = 'appengine_django_blank.urls'
+ROOT_URLCONF = 'urls'
 
 import os
 ROOT_PATH = os.path.dirname(__file__)
