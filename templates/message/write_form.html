@@ -1,0 +1,13 @@
+{% extends "_base.html" %}
+
+{% block main_content %}
+    <p>
+        <label for="id_user">user <a href="{{ logout_url }}">[Logout]</a></label>
+        <input id="id_user" value={{ user.nickname }} disabled="disabled">
+    </p>
+    <form action="/write/" method="POST" id="msg_form">
+        {{ form.as_p }}
+        <input type="submit" value="Submit">
+    </form>
+    
+{% endblock %}

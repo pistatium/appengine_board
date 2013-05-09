@@ -1,0 +1,29 @@
+{% extends "_base.html" %}
+
+{% block main_content %}
+
+    <a href="/write/" class="btn">Write Message</a>
+    
+    {% for message in messages %}
+        <div class="msg_main">
+            <span class="msg_title">{{ message.title }}</span>
+
+            <div class="msg_body well">{{ message.body|linebreaks}}</div>
+            <span class="msg_user">written by {{ message.user|truncatewords:1}}</span> 　| 　
+            <span class="msg_date">{{message.date}}</span>
+        </div>
+    {% endfor %}
+    <div>
+        <ul class="pager">
+            {% if messages.has_previous %}
+                <li><a href="{{messages.previous_page_number}}"> ←prev </a></li>
+                
+            {% endif %}
+            {% if messages.has_next %}
+                <li><a href="{{messages.next_page_number}}"> next→ </a></li>
+            {% endif %}
+        </ul>
+    </div>
+    <a href="/write/" class="btn">Write Message</a>
+    
+{% endblock %}

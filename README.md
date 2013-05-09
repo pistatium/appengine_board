@@ -1,3 +1,10 @@
+﻿narusemotoki / appengine_django_blank  
+[https://github.com/narusemotoki/appengine_django_blank](https://github.com/narusemotoki/appengine_django_blank)  
+をベースにAppEngineでメッセージボードを作成するサンプルです。
+
+*****
+*****
+
 Google App EngineでDjango 1.4を動かすための空プロジェクトです。  
 利用しやすいように少し無駄を残しています。
 

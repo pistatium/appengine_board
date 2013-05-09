@@ -1,7 +1,8 @@
 from django.conf.urls.defaults import patterns
 
 urlpatterns = patterns(
-    'blank.views',
+    'message.views',
     (r'^write/$', 'write'),
-    (r'^.*$', 'index'),
+    (r'^(\d+)$', 'index'),
+    (r'^$', 'index'),
 )

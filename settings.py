@@ -8,7 +8,8 @@ MIDDLEWARE_CLASSES = (
 )
 
 INSTALLED_APPS = (
-    'blank',
+    'message',
+    'libs',
 )
 
 ROOT_URLCONF = 'urls'

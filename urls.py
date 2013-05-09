@@ -15,5 +15,5 @@
 from django.conf.urls.defaults import *
 
 urlpatterns = patterns('',
-    (r'^', include('blank.urls')),
+    (r'^', include('message.urls')),
 )

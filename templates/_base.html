@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>{% block main_title%}{% endblock %}</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<link rel="stylesheet" href="/static/css/bootstrap.css">
+	<link rel="stylesheet" href="/static/css/default.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Message Board</h1>
+        
+        <div id="main">   
+            {% block main_content %}
+            {% endblock %}
+        </div>
+        <div id="footer">
+            Copylight(c) 2013 ******
+        </div>
+    </div>
+</body>
+</html>
