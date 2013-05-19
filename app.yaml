@@ -1,4 +1,4 @@
-application: codeflask
+application: *****
 version: msg
 runtime: python27
 api_version: 1
