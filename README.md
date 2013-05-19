@@ -1,10 +1,12 @@
-# GoogleAppEngineでメッセージボードを作成するサンプルです。
+#MessageBoard on AppEngine
 
-勉強会のサンプルとして作成しました。  
+GoogleAppEngineでメッセージボードを作成するサンプルです。
+
+内輪での勉強会のサンプルとして作成しました。  
 AppEngine/Py でDjangoの基本セットアップや、モデル・フォーム利用、  
 データベースのつなぎ込みなどがひと通り入ってます。
 
-## 入ってる要素
+### 入ってる要素
  * AppEngine/Python
  * Django
    * Model
@@ -17,5 +19,5 @@ AppEngine/Py でDjangoの基本セットアップや、モデル・フォーム�
 
 --------
 
-ベースは以下を利用させてもらいました。
+ベースは以下を利用させてもらいました。  
 [GitHub: narusemotoki / appengine_django_blank](https://github.com/narusemotoki/appengine_django_blank)
